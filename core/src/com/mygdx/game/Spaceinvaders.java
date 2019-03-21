@@ -17,9 +17,9 @@ public class Spaceinvaders extends ApplicationAdapter {
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		img1 = new Texture("gatilen0.png");
-		img2 = new Texture("gatilen1.png");
-		img3 = new Texture("gatilen2.png");
+		img1 = new Texture("gatilen_0.png");
+		img2 = new Texture("gatilen_1.png");
+		img3 = new Texture("gatilen_2.png");
 	}
 
 	@Override
