@@ -8,7 +8,8 @@ import com.badlogic.gdx.graphics.g2d.TextureRegion;
 public class Assets extends AssetManager {
 
     public TextureAtlas atlas;
-    public Animation<TextureRegion> alien;
+    public Animation<TextureRegion> alien, naveidle,space;
+
 
     void load(){
         load("invaders.atlas", TextureAtlas.class);
@@ -27,5 +28,7 @@ public class Assets extends AssetManager {
 
     void loadAnimations(){
         alien = new Animation<TextureRegion>(0.1f, atlas.findRegions("gatilen"));
+        naveidle = new Animation<TextureRegion>(0.1f, atlas.findRegions("naveidle"));
+        space = new Animation<TextureRegion>(1f, atlas.findRegions("space"));
     }
 }

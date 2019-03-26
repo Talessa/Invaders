@@ -1,14 +1,17 @@
 package com.mygdx.game.Screen;
 
 import com.badlogic.gdx.Screen;
+import com.mygdx.game.Assets;
 import com.mygdx.game.Spaceinvaders1;
 
 public class InvadersScreen implements Screen {
 
     Spaceinvaders1 game;
+    Assets assets;
 
     InvadersScreen (Spaceinvaders1 game){
         this.game= game;
+        this.assets = game.assets;
     }
 
     @Override

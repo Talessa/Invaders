@@ -8,4 +8,11 @@ public class MenuScreen extends InvadersScreen {
         super(game);
     }
 
+    @Override
+    public void render(float delta) {
+        if (assets.update()){
+            game.setScreen(new GameScreen(game));
+        }
+    }
+
 }

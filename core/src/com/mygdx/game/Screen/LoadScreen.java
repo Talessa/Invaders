@@ -10,7 +10,7 @@ public class LoadScreen extends InvadersScreen {
 
     @Override
     public void render(float delta) {
-        if (game.assets.update()){
+        if (assets.update()){
             game.setScreen(new MenuScreen(game));
         }
     }
